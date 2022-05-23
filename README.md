@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# アプリケーション名
+original
 
-* Ruby version
+# アプリケーション概要
+地図上で都道府県を選択し、各都道府県ごとに写真や説明を保存することができる。
 
-* System dependencies
+# URL
 
-* Configuration
+# テスト用アカウント
 
-* Database creation
+# 利用方法
 
-* Database initialization
+# アプリケーションを作成した背景
+① 旅の記録をまとめたいと思ったため。
+② JavaScriptの演習を実践で行いたいと思ったため。
 
-* How to run the test suite
+# データベース設計
+[![Image from Gyazo](https://i.gyazo.com/c5bfd5dfe3d138e0cb73a4e39b1d5d55.png)](https://gyazo.com/c5bfd5dfe3d138e0cb73a4e39b1d5d55)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 工夫したポイント
