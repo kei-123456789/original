@@ -13,6 +13,17 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header-top">
+        <%# <h1 class="grid-6"><a href="/">PicTweet</a></h1> %>
+        <div class="header-right">
+          <%= link_to "ログイン", new_user_session_path, class: "post" %>
+        </div>
+        <div class="header-right">
+          <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+        </div>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>

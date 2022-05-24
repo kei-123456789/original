@@ -1,0 +1,25 @@
+.header {
+  height: 65px;
+  background-color: aquamarine;
+}
+
+.header-top {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 20px;
+  height: 65px;
+}
+
+.header-right {
+  height: 32px;
+  width: 80px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.post {
+
+}
