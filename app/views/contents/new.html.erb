@@ -11,7 +11,7 @@
     </div>
     <div class="form-item">
       <%= f.label :prefecture_id %><br />
-      <%= f.collection_select(:prefecture_id, Prefecture2.all, :id, :name, {}, {id:"content-prefecture"}) %>
+      <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {id:"content-prefecture"}) %>
     </div>
     <div class="form-item">
       <%= f.label :explain %><br />

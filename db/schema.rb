@@ -36,11 +36,10 @@ ActiveRecord::Schema.define(version: 2022_05_25_063015) do
   create_table "contents", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "explain", null: false
     t.date "visit", null: false
+    t.integer "prefecture_id", null: false
     t.bigint "user_id", null: false
-    t.bigint "prefecture_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["prefecture_id"], name: "index_contents_on_prefecture_id"
     t.index ["user_id"], name: "index_contents_on_user_id"
   end
 
@@ -64,6 +63,5 @@ ActiveRecord::Schema.define(version: 2022_05_25_063015) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "contents", "prefectures"
   add_foreign_key "contents", "users"
 end
