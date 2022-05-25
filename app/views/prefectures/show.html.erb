@@ -1,18 +1,20 @@
 <section class="wrapper">
     <div class="container">
+    <% @contents.each do |content| %>
         <div class="content">
             <div class="content-item">
-                <img src="" class="image">
+                <%= image_tag content.image.variant(resize: '500x500') %>
             </div>    
             <div class="content-item">
                 <div class="text">
-                    <h2 class="heading">VISION</h2>
-                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <h2 class="heading"><%= content.visit  %></h2>
+                    <p><%= content.explain %></p>
                 </div>
             </div>
         </div>
+    <% end %>
     </div>
 </section>
 <%= link_to(new_content_path, class: 'post-btn') do %>
-    <span class='purchase-btn-text'>投稿する</span>
+    <span class='purchase-btn-text'>保存する</span>
 <% end %>

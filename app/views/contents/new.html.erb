@@ -1,5 +1,5 @@
 <div class="form-wrapper">
-  <h1>新規投稿</h1>
+  <h1>新しいデータ</h1>
 
     <%= form_with model: @content, id: 'new_content', local: true do |f| %>
 
@@ -22,7 +22,7 @@
       <%= f.file_field :image, id:"content-image" %>
     </div>
     <div class="button-panel">
-      <%= f.submit "投稿" ,class:'button' %>
+      <%= f.submit "保存" ,class:'button' %>
     </div>
     <% end %>
   <div class="form-footer">

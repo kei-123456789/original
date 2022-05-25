@@ -10,7 +10,7 @@ class ContentsController < ApplicationController
       render :new
     end
   end
-
+  
   private
 
   def content_params
