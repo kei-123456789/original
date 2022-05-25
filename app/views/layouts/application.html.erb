@@ -18,6 +18,9 @@
         <%# <h1 class="grid-6"><a href="/">PicTweet</a></h1> %>
         <% if user_signed_in? %>
         <div class="header-left">
+          <%= link_to "#{current_user.nickname}さん", root_path, class: "user-nickname" %>
+        </div>
+        <div class="header-left">
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %>
         </div>
         <% else %>
