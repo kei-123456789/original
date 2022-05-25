@@ -1,1 +1,30 @@
-<%= 'トップページ'%>
+<div class="form-wrapper">
+  <h1>新規投稿</h1>
+
+    <%= form_with model: @content, url: new_content_path, id: 'new_content', local: true do |f| %>
+
+    <%= render 'layouts/error_messages', model: f.object %>
+
+    <div class="form-item">
+      <%= f.label :visit %><br />
+      <%= f.date_field :visit %>
+    </div>
+    <div class="form-item">
+      <%= f.label :explain %><br />
+        <%= f.text_area :explain %>
+    </div>
+    <div class="form-item">
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
+    <div class="form-item">
+      <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    </div>
+    <div class="button-panel">
+      <%= f.submit "投稿" ,class:'button' %>
+    </div>
+    <% end %>
+  <div class="form-footer">
+  </div>
+</div>
