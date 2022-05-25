@@ -1,8 +1,10 @@
 class PrefecturesController < ApplicationController
   def index
-    @prefecture = Prefecture2.all
+    @prefectures = Prefecture.all
   end
   def show
-    @prefecture = Prefecture2.find(params[:id])
+    @prefecture = Prefecture.find(params[:id])
+    @content = Content.new
+    @contents = @prefecture.contents
   end
 end
