@@ -13,26 +13,33 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="header-top">
-        <%# <h1 class="grid-6"><a href="/">PicTweet</a></h1> %>
-        <% if user_signed_in? %>
-        <div class="header-left">
-          <%= link_to "#{current_user.nickname}さん", root_path, class: "user-nickname" %>
-        </div>
-        <div class="header-left">
-          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %>
-        </div>
-        <% else %>
-        <div class="header-left">
-          <%= link_to "ログイン", new_user_session_path, class: "post" %>
-        </div>
-        <div class="header-left">
-          <%= link_to "新規登録", new_user_registration_path, class: "post" %>
-        </div>
-        <% end %>
-      </div>
+    <header >
     </header>
+      <div class="header">
+        <div class="header-top-left">
+          <%# <h1 class="grid-6"><a href="/">PicTweet</a></h1> %>
+          <% if user_signed_in? %>
+          <div class="header-left">
+            <%= link_to "#{current_user.nickname}さん", root_path, class: "user-nickname" %>
+          </div>
+          <div class="header-left">
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %>
+          </div>
+          <% else %>
+          <div class="header-left">
+            <%= link_to "ログイン", new_user_session_path, class: "post" %>
+          </div>
+          <div class="header-left">
+            <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+          </div>
+          <% end %>
+        </div>
+        <div class="header-top-right">
+          <%= link_to(new_content_path, class: 'post-btn') do %>
+          <span class='purchase-btn-text'>保存する</span>
+        <% end %>
+        </div>
+      </div>
     <%= yield %>
   </body>
 </html>
