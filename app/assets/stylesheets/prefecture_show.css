@@ -40,19 +40,16 @@
 }
 
 .post-btn {
+  height: 65px;
   width: 100px;
-  background: pink;
   text-align: center;
   border-radius: 4%;
-  top: 10px;
-  right: 32px;
-  position: fixed;
-  padding: 10px;
 }
 
 .post-btn-text {
   color: #fff;
   display: block;
+  text-align: center;
   font-size: 18px;
   text-decoration: none;
   margin-bottom: 5px;

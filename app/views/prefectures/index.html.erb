@@ -7,275 +7,275 @@
 	<div class="area">
     <%= link_to prefecture_path(2) do %>
       <div id="hokkaido">
-        <p>北海道</p>
+        <p><%= @prefectures.find(2).name %></p>
       </div>
 		<% end %>
-		<a href="#">
+		<%= link_to prefecture_path(3) do %>
 			<div id="aomori">
-				<p>青森</p>
+				<p><%= @prefectures.find(3).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(6) do %>
 			<div id="akita">
-				<p>秋田</p>
+				<p><%= @prefectures.find(6).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(4) do %>
 			<div id="iwate">
-				<p>岩手</p>
+				<p><%= @prefectures.find(4).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(7) do %>
 			<div id="yamagata">
-				<p>山形</p>
+				<p><%= @prefectures.find(7).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(5) do %>
 			<div id="miyagi">
-				<p>宮城</p>
+				<p><%= @prefectures.find(5).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(8) do %>
 			<div id="fukushima">
-				<p>福島</p>
+				<p><%= @prefectures.find(8).name %></p>
 			</div>
-		</a>
+		<% end %>
 	</div>
 </div>
 
 <div id="kantou">
 	<p class="area-title">関東</p>
 	<div class="area">
-		<a href="#">
+		<%= link_to prefecture_path(11) do %>
 			<div id="gunma">
-				<p>群馬</p>
+				<p><%= @prefectures.find(11).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(10) do %>
 			<div id="tochigi">
-				<p>栃木</p>
+				<p><%= @prefectures.find(10).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(9) do %>
 			<div id="ibaraki">
-				<p>茨城</p>
+				<p><%= @prefectures.find(9).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(12) do %>
 			<div id="saitama">
-				<p>埼玉</p>
+				<p><%= @prefectures.find(12).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(13) do %>
 			<div id="chiba">
-				<p>千葉</p>
+				<p><%= @prefectures.find(13).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(14) do %>
 			<div id="tokyo">
-				<p>東京</p>
+				<p><%= @prefectures.find(14).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(15) do %>
 			<div id="kanagawa">
-				<p>神奈川</p>
+				<p><%= @prefectures.find(15).name %></p>
 			</div>
-		</a>
+		<% end %>
 	</div>
 </div>
 
 <div id="tyubu" class="clearfix">
 	<p class="area-title">中部</p>
 	<div class="area">
-		<a href="#">
+		<%= link_to prefecture_path(16) do %>
 			<div id="nigata">
-				<p>新潟</p>
+				<p><%= @prefectures.find(16).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(17) do %>
 			<div id="toyama">
-				<p>富山</p>
+				<p><%= @prefectures.find(17).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(18) do %>
 			<div id="ishikawa">
-				<p>石川</p>
+				<p><%= @prefectures.find(18).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(19) do %>
 			<div id="fukui">
-				<p>福井</p>
+				<p><%= @prefectures.find(19).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(21) do %>
 			<div id="nagano">
-				<p>長野</p>
+				<p><%= @prefectures.find(21).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(22) do %>
 			<div id="gifu">
-				<p>岐阜</p>
+				<p><%= @prefectures.find(22).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(20) do %>
 			<div id="yamanashi">
-				<p>山梨</p>
+				<p><%= @prefectures.find(20).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(24) do %>
 			<div id="aichi">
-				<p>愛知</p>
+				<p><%= @prefectures.find(24).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(23) do %>
 			<div id="shizuoka">
-				<p>静岡</p>
+				<p><%= @prefectures.find(23).name %></p>
 			</div>
-		</a>
+		<% end %>
 	</div>
 </div>
 
 <div id="kinki" class="clearfix">
 	<p class="area-title">近畿</p>
 	<div class="area">
-		<a href="#">
+		<%= link_to prefecture_path(27) do %>
 			<div id="kyoto">
-				<p>京都</p>
+				<p><%= @prefectures.find(27).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(26) do %>
 			<div id="shiga">
-				<p>滋賀</p>
+				<p><%= @prefectures.find(26).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(28) do %>
 			<div id="osaka">
-				<p>大阪</p>
+				<p><%= @prefectures.find(28).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(30) do %>
 			<div id="nara">
-				<p>奈良</p>
+				<p><%= @prefectures.find(30).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(25) do %>
 			<div id="mie">
-				<p>三重</p>
+				<p><%= @prefectures.find(25).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(31) do %>
 			<div id="wakayama">
-				<p>和歌山</p>
+				<p><%= @prefectures.find(31).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(29) do %>
 			<div id="hyougo">
-				<p>兵庫</p>
+				<p><%= @prefectures.find(29).name %></p>
 			</div>
-		</a>
+		<% end %>
 	</div>
 </div>
 
 <div id="tyugoku" class="clearfix">
 	<p class="area-title">中国</p>
 	<div class="area">
-		<a href="#">
+		<%= link_to prefecture_path(32) do %>
 			<div id="tottori">
-				<p>鳥取</p>
+				<p><%= @prefectures.find(32).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(34) do %>
 			<div id="okayama">
-				<p>岡山</p>
+				<p><%= @prefectures.find(34).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(33) do %>
 			<div id="shimane">
-				<p>島根</p>
+				<p><%= @prefectures.find(33).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(35) do %>
 			<div id="hiroshima">
-				<p>広島</p>
+				<p><%= @prefectures.find(35).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(36) do %>
 			<div id="yamaguchi">
-				<p>山口</p>
+				<p><%= @prefectures.find(36).name %></p>
 			</div>
-		</a>
+		<% end %>
 	</div>
 </div>
 
 <div id="shikoku" class="clearfix">
 	<p class="area-title">四国</p>
 	<div class="area">
-		<a href="#">
+		<%= link_to prefecture_path(38) do %>
 			<div id="kagawa">
-				<p>香川</p>
+				<p><%= @prefectures.find(38).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(39) do %>
 			<div id="ehime">
-				<p>愛媛</p>
+				<p><%= @prefectures.find(39).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(37) do %>
 			<div id="tokushima">
-				<p>徳島</p>
+				<p><%= @prefectures.find(37).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(40) do %>
 			<div id="kouchi">
-				<p>高知</p>
+				<p><%= @prefectures.find(40).name %></p>
 			</div>
-		</a>
+		<% end %>
 	</div>
 </div>
 
 <div id="kyusyu" class="clearfix">
 	<p class="area-title">九州・沖縄</p>
 	<div class="area">
-		<a href="#">
+		<%= link_to prefecture_path(41) do %>
 			<div id="fukuoka">
-				<p>福岡</p>
+				<p><%= @prefectures.find(41).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(42) do %>
 			<div id="saga">
-				<p>佐賀</p>
+				<p><%= @prefectures.find(42).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(43) do %>
 			<div id="nagasaki">
-				<p>長崎</p>
+				<p><%= @prefectures.find(43).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(45) do %>
 			<div id="oita">
-				<p>大分</p>
+				<p><%= @prefectures.find(45).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(44) do %>
 			<div id="kumamoto">
-				<p>熊本</p>
+				<p><%= @prefectures.find(44).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(46) do %>
 			<div id="miyazaki">
-				<p>宮崎</p>
+				<p><%= @prefectures.find(46).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(47) do %>
 			<div id="kagoshima">
-				<p>鹿児島</p>
+				<p><%= @prefectures.find(47).name %></p>
 			</div>
-		</a>
-		<a href="#">
+		<% end %>
+		<%= link_to prefecture_path(48) do %>
 			<div id="okinawa">
-				<p>沖縄</p>
+				<p><%= @prefectures.find(48).name %></p>
 			</div>
-		</a>
+		<% end %>
 	</div>
 </div>
 
