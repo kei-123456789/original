@@ -5,6 +5,6 @@ class PrefecturesController < ApplicationController
   def show
     @prefecture = Prefecture.find(params[:id])
     @content = Content.new
-    @contents = @prefecture.contents
+    @contents = @prefecture.contents.order("visit DESC")
   end
 end
