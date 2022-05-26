@@ -1,7 +1,7 @@
 /* container */
 .wrapper {
   width:100%;
-  background-color:#fafafa;
+  background-color:#fff;
 }
 .wrapper .container{
   max-width:1000px;
@@ -57,4 +57,29 @@
 
 .content {
   margin-bottom: 50px;
+}
+
+.nopost {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 32px;
+  background: #e0edff;
+  position: fixed;
+  right: 30px;
+  top: 200px;
+  border-radius: 20px;
+}
+.nopost:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #e0edff;
 }
