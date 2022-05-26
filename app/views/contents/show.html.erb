@@ -5,7 +5,9 @@
       <% @content.images.each do |images| %>
         <div class="content">
             <div class="content-item">
-                <div style="text-align:center"><%= image_tag images.variant(resize: '500x500') %></div>
+                <div style="text-align:center">
+                  <%= image_tag images.variant(resize: '500x500') %>
+                </div>
             </div>
         </div>
       <% end %>
