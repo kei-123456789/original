@@ -10,11 +10,14 @@ class ContentsController < ApplicationController
       render :new
     end
   end
+  def show
+    @content = Content.find(params[:id])
+  end
   
   private
 
   def content_params
-    params.require(:content).permit(:explain, :visit, :prefecture_id, :image).merge(user_id: current_user.id)
+    params.require(:content).permit(:explain, :visit, :prefecture_id, {images: []}).merge(user_id: current_user.id)
   end
 
 end
