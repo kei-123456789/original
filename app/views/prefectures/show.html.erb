@@ -1,4 +1,7 @@
 <section class="wrapper">
+    <% if @contents.count == 0 %>
+        <div class="nopost"><%= "投稿がありません！" %></div>
+    <%  else %>
     <div class="container">
     <% @contents.each do |content| %>
         <div class="content">
@@ -12,6 +15,7 @@
                 </div>
             </div>
         </div>
+    <% end %>
     <% end %>
     </div>
 </section>
