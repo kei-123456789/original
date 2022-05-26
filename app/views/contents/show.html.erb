@@ -1,0 +1,13 @@
+<section class="wrapper">
+  <div class="container">
+    <h2 class="content-visit"><%= @content.visit %></h2>
+    <h1 class="content-explain"><%= @content.explain %></h1>
+      <% @content.images.each do |images| %>
+        <div class="content">
+            <div class="content-item">
+                <div style="text-align:center"><%= image_tag images.variant(resize: '500x500') %></div>
+            </div>
+        </div>
+      <% end %>
+  </div>
+</section>
