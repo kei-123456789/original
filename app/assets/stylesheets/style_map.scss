@@ -87,8 +87,14 @@ a:hover {
 	left: 638px;
 }
 #hokkaido-touhoku div.area div {
-	background-color: #7478c2;
+	background-color: #920783;
 	color: #ffffff;
+}
+
+#hokkaido-touhoku div.area div.color {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px #000000 solid;
 }
 
 #hokkaido {	
@@ -145,9 +151,16 @@ a:hover {
 	z-index: 2;
 }
 #kantou div.area div {
-	background-color: #31beca;
+	background-color: #1d2088;
 	color: #ffffff;
 }
+
+#kantou div.area div.color {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px #000000 solid;
+}
+
 #ibaraki {
 	width: 52px;
 	height: 85px;
@@ -201,8 +214,14 @@ a:hover {
 	top: 223px;
 }
 #tyubu div.area div {
-	background-color: #4ab969;
+	background-color: #0068b7;
 	color: #ffffff;
+}
+
+#tyubu div.area div.color {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px #000000 solid;
 }
 
 #nigata {
@@ -267,8 +286,14 @@ a:hover {
 	top: 223px;
 }
 #kinki div.area div {
-	background-color: #b0b72f;
+	background-color: #009944;
 	color: #ffffff;
+}
+
+#kinki div.area div.color {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px #000000 solid;
 }
 
 #kyoto {
@@ -322,9 +347,16 @@ a:hover {
 	top: 223px;
 }
 #tyugoku div.area div {
-	background-color: #ef9f27;
+	background-color: #fff100;
 	color: #ffffff;
 }
+
+#tyugoku div.area div.color {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px #000000 solid;
+}
+
 #tottori {
 	width: 50px;
 	height: 49px;
@@ -363,9 +395,16 @@ a:hover {
 	top: 350px;
 }
 #shikoku div.area div {
-	background-color: #d08f68;
+	background-color: #f39800;
 	color: #ffffff;
 }
+
+#shikoku div.area div.color {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px #000000 solid;
+}
+
 #kagawa {
 	width: 92px;
 	height: 42px;
@@ -399,9 +438,16 @@ a:hover {
 	top: 235px;
 }
 #kyusyu div.area div {
-	background-color: #ff7575;
+	background-color: #e60000;
 	color: #ffffff;
 }
+
+#kyusyu div.area div.color {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px #000000 solid;
+}
+
 #fukuoka {
 	width: 50px;
 	height: 50px;
