@@ -13,6 +13,9 @@ class ContentsController < ApplicationController
   def show
     @content = Content.find(params[:id])
   end
+  def search
+    @contents = Content.search(params[:keyword]).order("visit DESC")
+  end
   
   private
 

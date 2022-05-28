@@ -1,6 +1,4 @@
 .header-top-left {
-  display: flex;
-  align-items: center;
   padding: 0 5px;
   height: 65px;
   top: 0px;
@@ -17,11 +15,19 @@
   border-radius: 5px;
   align-items: center;
   text-align: center;
-  margin-left: 10px;
+  margin-top: 10px;
   padding: 5px;
 }
 
 .header-top-right {
+  padding: 0 5px;
+  height: 65px;
+  top: 0px;
+  right: 10px;
+  position: fixed;
+}
+
+.header-right {
   height: 32px;
   width: 80px;
   background-color: pink;
@@ -32,7 +38,34 @@
   text-align: center;
   margin-top: 10px;
   padding: 5px;
-  top: 0px;
-  right: 10px;
-  position: fixed;
 }
+
+.header-right-box {
+  height: 32px;
+  width: 80px;
+}
+
+.search-btn {
+  background: transparent;
+  border: none;
+  height: 37px;
+  width: 90px;
+  background-color: pink;
+  text-decoration: none;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+  position: fixed;
+  right: 15px;
+  font-size: 16px;
+  color: #435ea9;
+}
+
+.search-input {
+  position: fixed;
+  top: 100px;
+  right: 15px;
+}
+
