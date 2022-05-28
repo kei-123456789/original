@@ -5,6 +5,14 @@ class Content < ApplicationRecord
   validates :explain, :visit, :images, presence: true
   validates :prefecture_id ,numericality: { other_than: 1 }
 
+  def self.search(search)
+    if search != ""
+      Content.where('visit LIKE(?)', "%#{search}%")
+    else
+      Content.all
+    end
+  end
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :prefecture
 end
