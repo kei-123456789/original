@@ -3,6 +3,7 @@ class Content < ApplicationRecord
   belongs_to :prefecture
   has_many_attached :images
   validates :explain, :visit, :images, presence: true
+  validates :visit, presence: true, format: {with: /\A[\w-]+\z/i}
   validates :prefecture_id ,numericality: { other_than: 1 }
 
   def self.search(search)
