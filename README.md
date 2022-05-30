@@ -27,7 +27,7 @@ Password : 123abc
 ③ JavaScriptの演習を実践で行いたいと思ったため。
 
 # データベース設計
-[![Image from Gyazo](https://i.gyazo.com/cbfb2d63c8a99dc6d55b0114229b9aab.png)](https://gyazo.com/cbfb2d63c8a99dc6d55b0114229b9aab)
+[![Image from Gyazo](https://i.gyazo.com/384553c45b6e0bb54f8a5bf75a15523d.png)](https://gyazo.com/384553c45b6e0bb54f8a5bf75a15523d)
 
 # 工夫したポイント
 ① 変更する必要のない都道府県の id を決める際に activehash を使用した。  
