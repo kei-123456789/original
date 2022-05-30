@@ -1,4 +1,6 @@
 class PrefecturesController < ApplicationController
+  before_action :authenticate_user!, only: [:index, :show]
+
   def index
     @prefectures = Prefecture.all
     @content = Content.new
