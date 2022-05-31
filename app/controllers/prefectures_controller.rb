@@ -8,6 +8,6 @@ class PrefecturesController < ApplicationController
   def show
     @prefecture = Prefecture.find(params[:id])
     @content = Content.new
-    @contents = @prefecture.contents.order("visit DESC")
+    @contents = @prefecture.contents.where(user: current_user).order("visit DESC")
   end
 end

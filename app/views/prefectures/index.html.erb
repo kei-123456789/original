@@ -7,7 +7,7 @@
 	<div class="area">
 
     <%= link_to prefecture_path(2) do %>
-			<% if @prefectures.find(2).contents.present? %>
+			<% if @prefectures.find(2).contents.where(user: current_user).present? %>
 				<div id="hokkaido">
 			<% else %>
 				<div class="color" id="hokkaido">
@@ -17,7 +17,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(3) do %>
-			<% if @prefectures.find(3).contents.present?%>
+			<% if @prefectures.find(3).contents.where(user: current_user).present?%>
 				<div id="aomori">
 			<% else %>
 				<div class="color" id="aomori">
@@ -27,7 +27,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(4) do %>
-			<% if @prefectures.find(4).contents.present? %>
+			<% if @prefectures.find(4).contents.where(user: current_user).present? %>
 				<div id="akita">
 			<% else %>
 				<div class="color" id="akita">
@@ -37,7 +37,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(5) do %>
-			<% if @prefectures.find(5).contents.present?%>
+			<% if @prefectures.find(5).contents.where(user: current_user).present?%>
 				<div id="iwate">
 			<% else %>
 				<div class="color" id="iwate">
@@ -47,7 +47,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(6) do %>
-			<% if @prefectures.find(6).contents.present?%>
+			<% if @prefectures.find(6).contents.where(user: current_user).present?%>
 				<div id="yamagata">
 			<% else %>
 				<div class="color" id="yamagata">
@@ -57,7 +57,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(7) do %>
-			<% if @prefectures.find(7).contents.present?%>
+			<% if @prefectures.find(7).contents.where(user: current_user).present?%>
 				<div id="miyagi">
 			<% else %>
 				<div class="color" id="miyagi">
@@ -67,7 +67,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(8) do %>
-			<% if @prefectures.find(8).contents.present?%>
+			<% if @prefectures.find(8).contents.where(user: current_user).present?%>
 				<div id="fukushima">
 			<% else %>
 				<div class="color" id="fukushima">
@@ -84,7 +84,7 @@
 	<div class="area">
 
 		<%= link_to prefecture_path(9) do %>
-			<% if @prefectures.find(9).contents.present?%>
+			<% if @prefectures.find(9).contents.where(user: current_user).present?%>
 				<div id="gunma">
 			<% else %>
 				<div class="color" id="gunma">
@@ -94,7 +94,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(10) do %>
-			<% if @prefectures.find(10).contents.present?%>
+			<% if @prefectures.find(10).contents.where(user: current_user).present?%>
 				<div id="tochigi">
 			<% else %>
 				<div class="color" id="tochigi">
@@ -104,7 +104,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(11) do %>
-			<% if @prefectures.find(11).contents.present?%>
+			<% if @prefectures.find(11).contents.where(user: current_user).present?%>
 				<div id="ibaraki">
 			<% else %>
 				<div class="color" id="ibaraki">
@@ -114,7 +114,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(12) do %>
-			<% if @prefectures.find(12).contents.present?%>
+			<% if @prefectures.find(12).contents.where(user: current_user).present?%>
 				<div id="saitama">
 			<% else %>
 				<div class="color" id="saitama">
@@ -124,7 +124,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(13) do %>
-			<% if @prefectures.find(13).contents.present?%>
+			<% if @prefectures.find(13).contents.where(user: current_user).present?%>
 				<div id="chiba">
 			<% else %>
 				<div class="color" id="chiba">
@@ -134,7 +134,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(14) do %>
-			<% if @prefectures.find(14).contents.present?%>
+			<% if @prefectures.find(14).contents.where(user: current_user).present?%>
 				<div id="tokyo">
 			<% else %>
 				<div class="color" id="tokyo">
@@ -144,7 +144,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(15) do %>
-			<% if @prefectures.find(15).contents.present?%>
+			<% if @prefectures.find(15).contents.where(user: current_user).present?%>
 				<div id="kanagawa">
 			<% else %>
 				<div class="color" id="kanagawa">
@@ -161,7 +161,7 @@
 	<div class="area">
 
 		<%= link_to prefecture_path(16) do %>
-			<% if @prefectures.find(16).contents.present?%>
+			<% if @prefectures.find(16).contents.where(user: current_user).present?%>
 				<div id="nigata">
 			<% else %>
 				<div class="color" id="nigata">
@@ -171,7 +171,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(17) do %>
-			<% if @prefectures.find(17).contents.present?%>
+			<% if @prefectures.find(17).contents.where(user: current_user).present?%>
 				<div id="toyama">
 			<% else %>
 				<div class="color" id="toyama">
@@ -181,7 +181,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(18) do %>
-			<% if @prefectures.find(18).contents.present?%>
+			<% if @prefectures.find(18).contents.where(user: current_user).present?%>
 				<div id="ishikawa">
 			<% else %>
 				<div class="color" id="ishikawa">
@@ -191,7 +191,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(19) do %>
-			<% if @prefectures.find(19).contents.present?%>
+			<% if @prefectures.find(19).contents.where(user: current_user).present?%>
 				<div id="fukui">
 			<% else %>
 				<div class="color" id="fukui">
@@ -201,7 +201,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(20) do %>
-			<% if @prefectures.find(20).contents.present?%>
+			<% if @prefectures.find(20).contents.where(user: current_user).present?%>
 				<div id="nagano">
 			<% else %>
 				<div class="color" id="nagano">
@@ -211,7 +211,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(21) do %>
-			<% if @prefectures.find(21).contents.present?%>
+			<% if @prefectures.find(21).contents.where(user: current_user).present?%>
 				<div id="gifu">
 			<% else %>
 				<div class="color" id="gifu">
@@ -221,7 +221,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(22) do %>
-			<% if @prefectures.find(22).contents.present?%>
+			<% if @prefectures.find(22).contents.where(user: current_user).present?%>
 				<div id="yamanashi">
 			<% else %>
 				<div class="color" id="yamanashi">
@@ -231,7 +231,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(23) do %>
-			<% if @prefectures.find(23).contents.present?%>
+			<% if @prefectures.find(23).contents.where(user: current_user).present?%>
 				<div id="aichi">
 			<% else %>
 				<div class="color" id="aichi">
@@ -241,7 +241,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(24) do %>
-			<% if @prefectures.find(24).contents.present?%>
+			<% if @prefectures.find(24).contents.where(user: current_user).present?%>
 				<div id="shizuoka">
 			<% else %>
 				<div class="color" id="shizuoka">
@@ -258,7 +258,7 @@
 	<div class="area">
 
 		<%= link_to prefecture_path(25) do %>
-			<% if @prefectures.find(25).contents.present?%>
+			<% if @prefectures.find(25).contents.where(user: current_user).present?%>
 				<div id="kyoto">
 			<% else %>
 				<div class="color" id="kyoto">
@@ -268,7 +268,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(26) do %>
-			<% if @prefectures.find(26).contents.present?%>
+			<% if @prefectures.find(26).contents.where(user: current_user).present?%>
 				<div id="shiga">
 			<% else %>
 				<div class="color" id="shiga">
@@ -278,7 +278,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(27) do %>
-			<% if @prefectures.find(27).contents.present?%>
+			<% if @prefectures.find(27).contents.where(user: current_user).present?%>
 				<div id="osaka">
 			<% else %>
 				<div class="color" id="osaka">
@@ -288,7 +288,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(28) do %>
-			<% if @prefectures.find(28).contents.present?%>
+			<% if @prefectures.find(28).contents.where(user: current_user).present?%>
 				<div id="nara">
 			<% else %>
 				<div class="color" id="nara">
@@ -298,7 +298,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(29) do %>
-			<% if @prefectures.find(29).contents.present?%>
+			<% if @prefectures.find(29).contents.where(user: current_user).present?%>
 				<div id="mie">
 			<% else %>
 				<div class="color" id="mie">
@@ -308,7 +308,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(30) do %>
-			<% if @prefectures.find(30).contents.present?%>
+			<% if @prefectures.find(30).contents.where(user: current_user).present?%>
 				<div id="wakayama">
 			<% else %>
 				<div class="color" id="wakayama">
@@ -318,7 +318,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(31) do %>
-			<% if @prefectures.find(31).contents.present?%>
+			<% if @prefectures.find(31).contents.where(user: current_user).present?%>
 				<div id="hyougo">
 			<% else %>
 				<div class="color" id="hyougo">
@@ -335,7 +335,7 @@
 	<div class="area">
 
 		<%= link_to prefecture_path(32) do %>
-			<% if @prefectures.find(32).contents.present?%>
+			<% if @prefectures.find(32).contents.where(user: current_user).present?%>
 				<div id="tottori">
 			<% else %>
 				<div class="color" id="tottori">
@@ -345,7 +345,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(33) do %>
-<% if @prefectures.find(33).contents.present?%>
+			<% if @prefectures.find(33).contents.where(user: current_user).present?%>
 				<div id="okayama">
 			<% else %>
 				<div class="color" id="okayama">
@@ -355,7 +355,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(34) do %>
-			<% if @prefectures.find(34).contents.present?%>
+			<% if @prefectures.find(34).contents.where(user: current_user).present?%>
 				<div id="shimane">
 			<% else %>
 				<div class="color" id="shimane">
@@ -365,7 +365,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(35) do %>
-			<% if @prefectures.find(35).contents.present?%>
+			<% if @prefectures.find(35).contents.where(user: current_user).present?%>
 				<div id="hiroshima">
 			<% else %>
 				<div class="color" id="hiroshima">
@@ -375,7 +375,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(36) do %>
-			<% if @prefectures.find(36).contents.present?%>
+			<% if @prefectures.find(36).contents.where(user: current_user).present?%>
 				<div id="yamaguchi">
 			<% else %>
 				<div class="color" id="yamaguchi">
@@ -392,7 +392,7 @@
 	<div class="area">
 
 		<%= link_to prefecture_path(37) do %>
-			<% if @prefectures.find(37).contents.present?%>
+			<% if @prefectures.find(37).contents.where(user: current_user).present?%>
 				<div id="kagawa">
 			<% else %>
 				<div class="color" id="kagawa">
@@ -402,7 +402,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(38) do %>
-			<% if @prefectures.find(38).contents.present?%>
+			<% if @prefectures.find(38).contents.where(user: current_user).present?%>
 				<div id="ehime">
 			<% else %>
 				<div class="color" id="ehime">
@@ -412,7 +412,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(39) do %>
-			<% if @prefectures.find(39).contents.present?%>
+			<% if @prefectures.find(39).contents.where(user: current_user).present?%>
 				<div id="tokushima">
 			<% else %>
 				<div class="color" id="tokushima">
@@ -422,7 +422,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(40) do %>
-			<% if @prefectures.find(40).contents.present?%>
+			<% if @prefectures.find(40).contents.where(user: current_user).present?%>
 				<div id="kouchi">
 			<% else %>
 				<div class="color" id="kouchi">
@@ -439,7 +439,7 @@
 	<div class="area">
 
 		<%= link_to prefecture_path(41) do %>
-			<% if @prefectures.find(41).contents.present?%>
+			<% if @prefectures.find(41).contents.where(user: current_user).present?%>
 				<div id="fukuoka">
 			<% else %>
 				<div class="color" id="fukuoka">
@@ -449,7 +449,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(42) do %>
-			<% if @prefectures.find(42).contents.present?%>
+			<% if @prefectures.find(42).contents.where(user: current_user).present?%>
 				<div id="saga">
 			<% else %>
 				<div class="color" id="saga">
@@ -459,7 +459,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(43) do %>
-			<% if @prefectures.find(43).contents.present?%>
+			<% if @prefectures.find(43).contents.where(user: current_user).present?%>
 				<div id="nagasaki">
 			<% else %>
 				<div class="color" id="nagasaki">
@@ -469,7 +469,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(44) do %>
-			<% if @prefectures.find(44).contents.present?%>
+			<% if @prefectures.find(44).contents.where(user: current_user).present?%>
 				<div id="oita">
 			<% else %>
 				<div class="color" id="oita">
@@ -479,7 +479,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(45) do %>
-			<% if @prefectures.find(45).contents.present?%>
+			<% if @prefectures.find(45).contents.where(user: current_user).present?%>
 				<div id="kumamoto">
 			<% else %>
 				<div class="color" id="kumamoto">
@@ -489,7 +489,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(46) do %>
-			<% if @prefectures.find(46).contents.present?%>
+			<% if @prefectures.find(46).contents.where(user: current_user).present?%>
 				<div id="miyazaki">
 			<% else %>
 				<div class="color" id="miyazaki">
@@ -499,7 +499,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(47) do %>
-			<% if @prefectures.find(47).contents.present?%>
+			<% if @prefectures.find(47).contents.where(user: current_user).present?%>
 				<div id="kagoshima">
 			<% else %>
 				<div class="color" id="kagoshima">
@@ -509,7 +509,7 @@
 			<% end %>
 
 		<%= link_to prefecture_path(48) do %>
-			<% if @prefectures.find(48).contents.present?%>
+			<% if @prefectures.find(48).contents.where(user: current_user).present?%>
 				<div id="okinawa">
 			<% else %>
 				<div class="color" id="okinawa">
