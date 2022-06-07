@@ -16,7 +16,7 @@ class ContentsController < ApplicationController
     @content = Content.find(params[:id])
   end
   def search
-    @contents = Content.search(params[:keyword]).order("visit DESC")
+    @contents = Content.where(user: current_user).search(params[:keyword]).order("visit DESC")
   end
   
   private
