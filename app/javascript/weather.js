@@ -11,6 +11,11 @@ function fail(error) {
 
 navigator.geolocation.getCurrentPosition(success, fail);
 
+// UTCをミリ秒に
+function utcToJSTime(utcTime) {
+  return utcTime * 1000;
+}
+
 // データ取得
 function ajaxRequest(lat, long) {
   const url = 'https://api.openweathermap.org/data/2.5/forecast';
