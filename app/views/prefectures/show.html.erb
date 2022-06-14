@@ -1,9 +1,10 @@
-
 <% if @contents.count == 0 %>
 <section class="wrapper">
-    <div class="nopost"><%= "投稿がありません！" %></div>
+    <div class="ex"><%= @prefecture.name %></div>
+    <div class="nopost"><%= "投稿がありません！" %>
 <% else %>
 <section class="wrapper-b">
+    <div class="ex" id="<%= @prefecture.id %>"><%= @prefecture.name %></div>
     <div class="container">
     <% @contents.each do |content| %>
         <div class="content">
@@ -22,4 +23,11 @@
     <% end %>
 <% end %>
     </div>
+    <h3 id="place"></h3>
+    <div id="now">
+        <div id="weather">
+        </div>
+    </div>
+    <table id="forecast">
+    </table>
 </section>
