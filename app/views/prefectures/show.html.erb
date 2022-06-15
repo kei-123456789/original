@@ -4,7 +4,7 @@
     <div class="nopost"><%= "投稿がありません！" %>
 <% else %>
 <section class="wrapper-b">
-    <div class="ex" id="<%= @prefecture.id %>"><%= @prefecture.name %></div>
+    <div class="ex"><%= @prefecture.name %></div>
     <div class="container">
     <% @contents.each do |content| %>
         <div class="content">
