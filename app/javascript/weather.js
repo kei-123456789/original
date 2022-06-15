@@ -1,4 +1,6 @@
 'use strict';
+
+// 都道府県ごとに緯度・経度を設定
 if(location.pathname === '/prefectures/2') {
   const lat2 = 43.046848;
   const long2 = 141.322114;
@@ -190,8 +192,6 @@ if(location.pathname === '/prefectures/2') {
 }
 
 console.log('no');
-
-// ajaxRequest(lat2, long2);
 
 // UTCをミリ秒に
 function utcToJSTime(utcTime) {
