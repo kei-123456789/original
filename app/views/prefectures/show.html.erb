@@ -1,28 +1,27 @@
-<% if @contents.count == 0 %>
 <section class="wrapper">
     <div class="ex"><%= @prefecture.name %></div>
-    <div class="nopost"><%= "投稿がありません！" %>
-<% else %>
-<section class="wrapper-b">
-    <div class="ex"><%= @prefecture.name %></div>
     <div class="container">
-    <% @contents.each do |content| %>
-        <div class="content">
-            <div class="content-item">
-                <%= link_to content_path(content.id) do %>
-                <div style="text-align:center"><%= image_tag content.images[0].variant(resize: '500x500') %></div>
-                <% end %>
-            </div>    
-            <div class="content-item">
-                <div class="text">
-                    <h2 class="content-visit"><%= content.visit  %></h2>
-                    <h1 class="content-explain"><%= content.explain %></h1>
+    <% if @contents.count == 0 %>
+        <h4>投稿がありません</h4>
+    <% else %>
+        <% @contents.each do |content| %>
+            <div class="content">
+                <div class="content-item">
+                    <%= link_to content_path(content.id) do %>
+                    <div style="text-align:center"><%= image_tag content.images[0].variant(resize: '500x500') %></div>
+                    <% end %>
+                </div>    
+                <div class="content-item">
+                    <div class="text">
+                        <h2 class="content-visit"><%= content.visit  %></h2>
+                        <h1 class="content-explain"><%= content.explain %></h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        <% end %>
     <% end %>
-<% end %>
     </div>
+    <h4>現地の天気予報</h4>
     <h3 id="place"></h3>
     <div id="now">
         <div id="weather">
@@ -30,5 +29,5 @@
     </div>
     <table id="forecast">
     </table>
-    <h3>画像が表示されていない場合は再読み込みをしてください。</h3>
+    <h4>画像が表示されていない場合は再読み込みをしてください</h4>
 </section>

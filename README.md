@@ -35,7 +35,16 @@ Password : 123abc
 ② position プロパティを用いて台詞のような吹き出しを再現した。  
 ③ 写真を保存するとトップページの都道府県に色がつくようにした。  
 ④ search アクションを定義し検索機能を実装した。
+⑤ Web API を用いて各地の天気予報を表示じた。  
+  
+# 参照したページ
+発笑探検隊様 HP
+http://takuri.realwork.jp/freematerials/2607  
+  
+OpenWeather様 HP  
+https://openweathermap.org/
 
-# 今後の実装予定
-① JavaScript を学習し、トップページに動きをつける。  
-② JavaScript の学習の中でアプリ作成に活かせるものがないかを見つけ出す。
+# 今後の課題
+①Java Scriptの記述が緯度経度を持たせるため冗長になっている。  
+ railsから引数を渡す、JSの読み込む順番を工夫する、などから緯度経度を取得したい。  
+②Web APIを読み込む際にほぼ毎回リロードが必要となる。上記と併せて解決法を探したい。
