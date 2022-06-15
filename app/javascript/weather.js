@@ -191,8 +191,6 @@ if(location.pathname === '/prefectures/2') {
   ajaxRequest(lat2, long2);
 }
 
-console.log('no');
-
 // UTCをミリ秒に
 function utcToJSTime(utcTime) {
   return utcTime * 1000;
