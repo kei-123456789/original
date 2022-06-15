@@ -38,7 +38,7 @@ Password : 123abc
 ⑤ Web API を用いて各地の天気予報を表示じた。  
   
 # 参照したページ
-発笑探検隊様 HP
+発笑探検隊様 HP  
 http://takuri.realwork.jp/freematerials/2607  
   
 OpenWeather様 HP  
