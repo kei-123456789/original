@@ -16,7 +16,11 @@ class ContentsController < ApplicationController
     @content = Content.find(params[:id])
   end
   def search
-    @contents = Content.where(user: current_user).search(params[:keyword]).order("visit DESC")
+    if params[:keyword].present?
+      @contents = Content.where(user: current_user).search(params[:keyword]).order("visit DESC")
+    else
+      redirect_to root_path
+    end
   end
   
   private

@@ -1,24 +1,23 @@
-<% if @contents.count == 0 %>
 <section class="wrapper">
-    <div class="nopost"><%= "投稿がありません！" %></div>
-<% else %>
-<section class="wrapper-b">
     <div class="container">
-    <% @contents.each do |content| %>
-        <div class="content">
-            <div class="content-item">
-                <%= link_to content_path(content.id) do %>
-                <div style="text-align:center"><%= image_tag content.images[0].variant(resize: '500x500') %></div>
-                <% end %>
-            </div>    
-            <div class="content-item">
-                <div class="text">
-                    <h2 class="content-visit"><%= content.visit  %></h2>
-                    <h1 class="content-explain"><%= content.explain %></h1>
+    <% if @contents.count == 0 %>
+        <h4>投稿がありません</h4>
+    <% else %>
+        <% @contents.each do |content| %>
+            <div class="content">
+                <div class="content-item">
+                    <%= link_to content_path(content.id) do %>
+                    <div style="text-align:center"><%= image_tag content.images[0].variant(resize: '500x500') %></div>
+                    <% end %>
+                </div>    
+                <div class="content-item">
+                    <div class="text">
+                        <h2 class="content-visit"><%= content.visit  %></h2>
+                        <h1 class="content-explain"><%= content.explain %></h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        <% end %>
     <% end %>
-<% end %>
     </div>
 </section>
