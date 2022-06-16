@@ -1,0 +1,1 @@
+Webpacker::Compiler.env["WEB_API_KEY"] = ENV["WEB_API_KEY"]
